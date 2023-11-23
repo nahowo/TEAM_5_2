@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'vote',
     'rest_framework',
+    'wordcloud',
 ]
 
 MIDDLEWARE = [
