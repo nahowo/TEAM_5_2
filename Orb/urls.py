@@ -21,4 +21,5 @@ urlpatterns = [
     path('api/', include('recommend.urls')),
     path('api/', include('vote.urls')),
     path('api/wordcloud/',include('wordcloud.urls')),
+    path('api/',include('recbyinput.urls'))
 ]

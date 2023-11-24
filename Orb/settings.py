@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'vote',
     'rest_framework',
     'wordcloud',
+    'recbyinput',
 ]
 
 MIDDLEWARE = [
