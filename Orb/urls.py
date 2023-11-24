@@ -20,5 +20,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('wordcloud/',include('wordcloud.urls')),
+    path('api/wordcloud/',include('wordcloud.urls')),
 ]
