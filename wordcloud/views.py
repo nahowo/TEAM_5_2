@@ -23,4 +23,5 @@ class WordView(APIView):
         word = get_object_or_404(Wordcloud, word=pk)
         word.likes+=1
         word.save()
-        return Response(status=status.HTTP_200_OK)
+        serializer = WordSerializer(word)
+        return Response(serializer.data, status=status.HTTP_200_OK)
