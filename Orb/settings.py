@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'recommend',
     'vote',
     'rest_framework',
+    'wordcloud',
 ]
 
 MIDDLEWARE = [
