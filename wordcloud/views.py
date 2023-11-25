@@ -19,7 +19,13 @@ class WordView(APIView):
         word = get_object_or_404(Wordcloud, word=pk)
         serializer = WordSerializer(word)
         return Response(serializer.data, status=status.HTTP_200_OK)
-    def put(self, reqeust, pk):
+    def put(self, reqeust, pk): # 좋아요 취소
+        word = get_object_or_404(Wordcloud, word=pk)
+        word.likes-=1
+        word.save()
+        serializer = WordSerializer(word)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+    def patch(self, request, pk): # 좋아요
         word = get_object_or_404(Wordcloud, word=pk)
         word.likes+=1
         word.save()
