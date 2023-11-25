@@ -19,7 +19,7 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('recommend.urls')),
-    path('api/', include('vote.urls')),
+    # path('api/', include('vote.urls')),
     path('api/wordcloud/',include('wordcloud.urls')),
     path('api/',include('recbyinput.urls')),
     path('api/teamnames/ai/', include("namingAiApp.urls")),

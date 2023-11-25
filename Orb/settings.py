@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'recommend',
-    'vote',
+    # 'vote',
     'rest_framework',
     'wordcloud',
     'recbyinput',
