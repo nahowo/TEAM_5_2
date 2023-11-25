@@ -4,7 +4,7 @@ from django.db import models
 
 class Wordcloud(models.Model):
     word = models.CharField(max_length=100)
-    likes = models.IntegerField()
+    likes = models.IntegerField(default=0)
 
     def __str__(self):
         return self.word
