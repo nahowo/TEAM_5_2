@@ -7,7 +7,8 @@ import openai
 from openai import OpenAI
 
 client = OpenAI(
-  api_key=os.environ.get('OPENAI_API_KEY'),
+  # api_key=os.environ.get('OPENAI_API_KEY'),
+  api_key='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',
   timeout=15.0,
 )
 
